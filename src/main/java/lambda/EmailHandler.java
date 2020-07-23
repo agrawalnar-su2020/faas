@@ -46,8 +46,7 @@ public class EmailHandler implements RequestHandler<SNSEvent, Object> {
             table.putItem(itemPut);
 
             String htmlBody = "Click on the following link to reset your password <br /> "
-                    + "<a href = '#'>https://"+ domain
-                    + "/pwdreset?email=" + TO + "&token=" + token + "</a>";
+                    + "<a href = https://"+ domain + "/pwdreset?email=" + TO + "&token=" + token +">" +"https://"+ domain + "/pwdreset?email=" + TO + "&token=" + token + "</a>";
 
             AmazonSimpleEmailService emailClient = AmazonSimpleEmailServiceClientBuilder.defaultClient();
             SendEmailRequest emailRequest = new SendEmailRequest().withDestination(new Destination().withToAddresses(TO))
