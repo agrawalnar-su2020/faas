@@ -1,7 +1,8 @@
 # Faas (Serverless)
 
 ## Objective
-* The function subscribes to the AWS - SNS service and send email to the user based on the timestamp of the last email sent  
+* The function subscribes to the AWS - SNS service
+* Send email to the user based on the timestamp of the last email sent  
 
 ## Prerequisites for building and deploying application locally
 
